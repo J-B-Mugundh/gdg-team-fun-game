@@ -18,7 +18,7 @@ people = [
 st.set_page_config(page_title="GDG MIT Fun Time", layout="centered")
 
 # Header image
-st.image("GDG-Community-Page-banner.jpg", use_container_width=True)
+st.image("GDG-Community-Page-banner.jpg")
 
 # Title
 st.markdown("<h2 style='text-align: center;'>🎉 GDG MIT - Fun Time 🎉</h2>", unsafe_allow_html=True)
