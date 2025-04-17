@@ -29,7 +29,11 @@ if st.button("Pick Participants 🎲"):
     st.info(f"🧍‍♀️ **{answerer}** will answer it!")
 
     # Ask Gemini for Truth/Dare suggestions
-    prompt = "Give me a fun Truth and a fun Dare suitable for a casual college group game"
+    prompt = """
+    Give me a list of 5 fun "Truth" questions and 5 fun "Dare" challenges suitable for a casual college group game.
+    Make sure they are light-hearted, creative, and not embarrassing or inappropriate.
+    """
+
     response = model.generate_content(prompt)
     suggestions = response.text
 
